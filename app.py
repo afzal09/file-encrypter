@@ -4,6 +4,9 @@ from Decrypter import Decrypter
 
 
 class app():
+    """ 
+    An app class used to run specified operations
+    """
     def __init__(self,operation,file,passwd):
         self.operation = operation
         self.file = file
