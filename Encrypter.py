@@ -16,7 +16,7 @@ class Encrypter():
     """
     def __init__(self,in_file,passwd):
         self.file = open(in_file,"r")
-        self.out_file = open('encrypted_file.txt','w+')
+        self.out_file = open(f'{in_file.split(".")[0]}-encrypted.txt','w+')
         self.password = passwd.encode("utf-8")
         self.salt = os.urandom(16)
         self.out_file.write(base64.b64encode(self.salt).decode("utf-8")+"\n")
