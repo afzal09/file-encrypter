@@ -1,0 +1,4 @@
+hello this is an example of how this application works
+this text document will be encrypted
+resulting in creation of an encrypted file
+which can be decrypted with same password used for encryption
