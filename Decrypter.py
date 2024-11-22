@@ -12,7 +12,7 @@ class Decrypter():
     """
     def __init__(self,encryp_file,passwd):
         self.file = open(encryp_file,"r")
-        self.out_file = open(f"{encryp_file.split('-')[0]}-decrypted_file.txt","w+")
+        self.out_file = open(f"{encryp_file.split('-')[0]}-decrypted.txt","w+")
         self.password =passwd.encode("utf-8")
         self.salt = base64.b64decode(self.file.readline().strip())
     
